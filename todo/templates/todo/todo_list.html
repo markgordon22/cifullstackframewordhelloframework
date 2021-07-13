@@ -17,6 +17,17 @@
         {% else %}
         <td>{{ item.name }}</td>
         {% endif %}
+        <td>
+        <a href="/toggle/{{ item.id }}">
+        <button>toggle</button>
+        </a>
+        <a href="/edit/{{ item.id }}">
+        <button>edit</button>
+        </a>
+        <a href="/delete/{{ item.id }}">
+        <button>delete</button>
+        </a>
+        </td>
         {% empty %}
         <td>You have nothing to do</td>
         </tr>
