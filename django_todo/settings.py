@@ -31,11 +31,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY','django-insecure-4io5q-r9j-yjw=kd_bjhu)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-#The 'False' there is a default value.
+#The 'False' there i
+# 
+# s a default value.
 #  It means that it should set False if there's not environment variable named "development" to be found
 
 if development:
-    ALLOWED_HOSTS = ['localhost']
+    ALLOWED_HOSTS = ['todolistmarkgordon.herokuapp.com']
 else:
     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
