@@ -37,7 +37,7 @@ DEBUG = development
 #  It means that it should set False if there's not environment variable named "development" to be found
 
 if development:
-    ALLOWED_HOSTS = ['todolistmarkgordon.herokuapp.com']
+    ALLOWED_HOSTS = ['localhost']
 else:
     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
